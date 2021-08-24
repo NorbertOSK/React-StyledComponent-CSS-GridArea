@@ -1,33 +1,28 @@
 import { GlobalStyle } from "./styles/globalStyles";
-import { Container } from "./views/Container";
-import { Footer } from "./views/Footer";
-import { Header } from "./views/Header";
-import { Main } from "./views/Main";
-import { Sidebar } from "./views/Sidebar";
-import { Widget } from "./views/Widget";
+import { Container, Header, Main, Sidebar, Widget, Footer } from "./styles/model";
 
 function App() {
   return (
     <>
       <GlobalStyle />
 
-      <Container>
+      <Container className="contenedor">
 
-        <Header>
+        <Header className="header">
           <h1>Header</h1>
         </Header>
 
-        <Main>
+        <Main className="contenido">
           <h2>Test</h2>
           <p>Lorem asdasd</p>
         </Main>
 
-        <Sidebar>Sidebar</Sidebar>
+        <Sidebar className="sidebar">Sidebar</Sidebar>
 
-        <Widget nameStyle="widget-1">Widget-1</Widget>
-        <Widget nameStyle="widget-2">Widget-2</Widget>
+        <Widget className="widget-1">Widget-1</Widget>
+        <Widget className="widget-2">Widget-2</Widget>
 
-        <Footer>Footer</Footer>
+        <Footer className="footer">Footer</Footer>
 
       </Container>
 
