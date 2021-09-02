@@ -13,7 +13,7 @@ grid-template-rows: repeat(4, auto);
 export const Header = styled.header`
 background: blue;
 color: #fff;
-grid-area: header;
+grid-area: header; //área
 
 & > h1 {
     margin-left: 2%;
@@ -23,27 +23,26 @@ grid-area: header;
 
 export const Main = styled.main`
 padding-left: 2%;
-grid-area: contenido;
+grid-area: contenido; //área
 `
 
 export const Sidebar = styled.aside`
 background: orange;
 min-height: 100px;
-grid-area: sidebar;
+grid-area: sidebar; //área
 
 /*flexbox para acomodar elementos*/
 
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center; //área
 `
 
 export const Widget = styled.div`
 
 background: orchid;
 height: 100px;
-
-grid-area: ${props => props.className === "widget-1" ? "widget-1" : "widget-2"};
+grid-area: ${props => props.className === "widget-1" ? "widget-1" : "widget-2"}; //área
 
 /*flexbox para acomodar elementos*/
 
@@ -56,5 +55,5 @@ export const Footer = styled.footer`
 padding: 20px;
 background: maroon;
 color: #fff;
-grid-area: footer;
+grid-area: footer; //área
 `
